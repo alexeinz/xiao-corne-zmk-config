@@ -11,13 +11,9 @@
         label = "BUTTON_DIRECT";
 
         input-gpios
-            = <&xiao_d 0 GPIO_ACTIVE_HIGH>;  // This needs to be your actual GPIO pin
+            = <&xiao_d 0 GPIO_ACTIVE_HIGH>,  // This needs to be your actual GPIO pin
+            <&ziao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        keymap {
-            compatible = "zmk,keymap";
-            num-rows = <1>;
-            num-columns = <1>;
-            keys = < 0x04 >; // This is the HID keycode for the 'A' key.
-        };
+        
     };
 };
