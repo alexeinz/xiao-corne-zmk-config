@@ -1,0 +1,6 @@
+if SHIELD_XIAO_SINGLE_BUTTON
+
+config ZMK_KEYBOARD_NAME
+	default "Xiao Single Button Shield"
+
+endif

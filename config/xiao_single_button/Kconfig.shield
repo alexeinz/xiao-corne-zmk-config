@@ -1,0 +1,5 @@
+config SHIELD_XIAO_SINGLE_BUTTON
+    bool "Xiao Single Button Shield"
+    depends on BOARD_SEEEDUINO_XIAO_BLE
+    help
+      If you have a custom shield with a Seeed Xiao and a single GPIO button, say Y here.
