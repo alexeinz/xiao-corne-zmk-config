@@ -11,7 +11,7 @@
         label = "BUTTON_DIRECT";
 
         input-gpios
-            = <&gpio0 2 GPIO_ACTIVE_HIGH>;  // This needs to be your actual GPIO pin
+            = <&xiao_d 0 GPIO_ACTIVE_HIGH>;  // This needs to be your actual GPIO pin
 
         keymap {
             compatible = "zmk,keymap";
